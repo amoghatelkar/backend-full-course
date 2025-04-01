@@ -1,0 +1,14 @@
+### Check JSON response
+GET http://localhost:8383/
+
+### Check HTML response
+GET http://localhost:8383/html
+
+### Post Data response
+POST http://localhost:8383/data
+Content-Type: application/json
+
+{
+    "name": "Amoga Telkar"
+}
+

@@ -1,0 +1,50 @@
+### GEt
+GET http://localhost:5003/
+
+### Register
+POST http://localhost:5003/auth/register
+Content-Type: application/json
+
+{
+    "username": "amoghtelkar6@gmail.com",
+    "password"  : "Amogh@123"
+}
+
+### Login
+POST http://localhost:5003/auth/login
+Content-Type: application/json
+
+{
+    "username": "amoghtelkar6@gmail.com",
+    "password"  : "Amogh@123"
+}
+
+### Get All Todos
+GET http://localhost:5003/todos
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQzNTAzOTIxLCJleHAiOjE3NDM1OTAzMjF9.VPoXUmeTYTcDW5Rkg8twKd_nsCXpxcYFGWltIpNTZ7Y
+Content-Type: application/json
+
+### Create Todo
+POST http://localhost:5003/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQzNTAzOTIxLCJleHAiOjE3NDM1OTAzMjF9.VPoXUmeTYTcDW5Rkg8twKd_nsCXpxcYFGWltIpNTZ7Y
+Content-Type: application/json
+
+{
+    "task" : "Finish coding projects"
+}
+
+### Update Todo
+PUT http://localhost:5003/todos/5
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQzNTAzOTIxLCJleHAiOjE3NDM1OTAzMjF9.VPoXUmeTYTcDW5Rkg8twKd_nsCXpxcYFGWltIpNTZ7Y
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+### Delete Todo
+DELETE  http://localhost:5003/todos/3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQzNTAzNzkxLCJleHAiOjE3NDM1OTAxOTF9.ezGwbQAzTuY7f619rw8vQfu0mAFou00ff6Xfu701cwU
+Content-Type: application/json
+
+
